@@ -14,9 +14,8 @@ def check_fibonacci(data: Sequence[int]) -> bool:
     if tuple(data[:3]) != (1, 1, 2):
         return False
 
-    for i in range(len(data)-2):
-        if data[i] + data[i+1] != data[i+2]:
+    for i in range(len(data) - 2):
+        if data[i] + data[i + 1] != data[i + 2]:
             return False
 
     return True
-
